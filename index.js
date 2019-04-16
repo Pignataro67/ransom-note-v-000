@@ -9,7 +9,7 @@
 // }
 
 function canBuildNote(mag,note){
-  let hist = buildHistogram(mag)
+  let hist = binaryMatch(mag)
   for (let el of note){
     if (hist[el] > 0){
       hist[el]-=1
@@ -21,15 +21,15 @@ function canBuildNote(mag,note){
   return true
 }
 
-// function buildHistogram(mag){
-//   let hash={}
-//   for (let el of mag){
-//     if (hash[el]){
-//       hash[el]+=1
-//     }
-//     else{
-//       hash[el]=1
-//     }
-//   }
-//   return hash
-// }
+function binaryMatch(mag){
+  let hash={}
+  for (let el of mag){
+    if (hash[el]){
+      hash[el]+=1
+    }
+    else{
+      hash[el]=1
+    }
+  }
+  return hash
+}
