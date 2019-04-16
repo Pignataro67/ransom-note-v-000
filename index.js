@@ -14,7 +14,7 @@ function canBuildNote(arr, note) {
 
   for (let [char, count] of noteHistogram) {
     const magCharCount = magazineHistogram.get(char) || 0;
-    if (count > magCharCount) { return false; };
+    if (count > magCharCount) { return false; }
   }
 
 
