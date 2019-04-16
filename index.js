@@ -1,12 +1,12 @@
-// function buildHistogram(arr) {
-//   let histogram = new Map();
+function buildHistogram(arr) {
+  let histogram = new Map();
 
-//   arr.forEach(n => {
-//     histogram.get(n) ? histogram.set(n, histogram.get(n) + 1) : histogram.set(n, 1);
-//   });
+  arr.forEach(n => {
+    histogram.get(n) ? histogram.set(n, histogram.get(n) + 1) : histogram.set(n, 1);
+  });
 
-//   return histogram;
-// }
+  return histogram;
+}
 
 function canBuildNote(mag,note){
   let hist = binaryMatch(mag)
