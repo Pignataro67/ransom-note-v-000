@@ -1,5 +1,5 @@
 function canBuildNote(mag,note){
-  let hist = buildHistogram(mag)
+  const hist = buildHistogram(mag)
   for (let el of note){
     if (hist[el] > 0){
       hist[el]-=1
@@ -12,7 +12,7 @@ function canBuildNote(mag,note){
 }
 
 function buildHistogram(mag){
-  let hash={}
+  const hash = {}
   for (let el of mag){
     if (hash[el]){
       hash[el]+=1
