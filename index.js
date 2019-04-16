@@ -1,4 +1,4 @@
-function canBuildNote(mag,note){
+function canBuildNote(mag, note){
   const hist = buildHistogram(mag)
   for (let el of note){
     if (hist[el] > 0){
