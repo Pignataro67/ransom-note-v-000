@@ -8,21 +8,19 @@ function buildHistogram(arr) {
   return histogram;
 }
 
-function canBuildNote(arr, note) {
-  const magazineHistogram = buildHistogram(arr);
-  const noteHistogram = buildHistogram(note.split(''));
+// function canBuildNote(arr, note) {
+//   const magazineHistogram = buildHistogram(arr);
+//   const noteHistogram = buildHistogram(note.split(''));
 
-  for (let [char, count] of noteHistogram) {
-    const magCharCount = magazineHistogram.get(char) || 0;
-    if (count > magCharCount) { return false; }
-  }
+//   for (let [char, count] of noteHistogram) {
+//     const magCharCount = magazineHistogram.get(char) || 0;
+//     if (count > magCharCount) { return false; }
+//   }
 
-  return true;
-}
-
-// function binaryMatch(mag){
-
+//   return true;
 // }
+
+
 
 function canBuildNote(mag,note){
   let hist = buildHistogram(mag)
