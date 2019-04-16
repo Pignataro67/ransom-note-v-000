@@ -19,3 +19,7 @@ function canBuildNote(arr, note) {
 
   return true;
 }
+
+function binaryMatch(mag){
+
+}
