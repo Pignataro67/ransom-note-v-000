@@ -17,6 +17,5 @@ function canBuildNote(arr, note) {
     if (count > magCharCount) { return false; }
   }
 
-
   return true;
 }
