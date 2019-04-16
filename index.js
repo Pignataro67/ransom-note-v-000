@@ -20,9 +20,9 @@ function canBuildNote(arr, note) {
   return true;
 }
 
-function binaryMatch(mag){
+// function binaryMatch(mag){
 
-}
+// }
 
 function canBuildNote(mag,note){
   let hist = buildHistogram(mag)
